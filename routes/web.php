@@ -625,7 +625,7 @@ Route::prefix('/layout')->group(function () {
     Route::get('/boxed', function () {
         return view('pages.layout.boxed',
         [
-            "setting_content"=>"",
+            "setting_content"=>"layout-boxed",
             "setting_navbar"=>"navbar-white navbar-light",
             "title_content"=>"Read Mail",
         ]
