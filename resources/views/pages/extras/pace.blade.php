@@ -1,7 +1,7 @@
 @extends('temp.temp_master')
 @section('MOExtras','menu-open')
 @section('MExtras','active')
-@section('SExtraLegacy','active')
+@section('SExtraPace','active')
 @section('maincontent')
     <!-- Main content -->
     <section class="content">
@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="card-body">
-          Check the Header part you can find Legacy vesion of style.
+          You can Change Pace Styles, Checkout the <a href="https://adminlte.io/docs/3.1/" target="_blank" rel="noopener noreferrer">AdminLTE Official Docs</a> in Online.
           <br>
           Start creating your amazing application!
         </div>
@@ -41,6 +41,8 @@
 <script src="/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- pace-progress -->
+<script src="/plugins/pace-progress/pace.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->

@@ -62,6 +62,10 @@
     <link rel="stylesheet" href="/plugins/fullcalendar/main.css">
     <!-- Ekko Lightbox -->
     <link rel="stylesheet" href="/plugins/ekko-lightbox/ekko-lightbox.css">
+    <!-- pace-progress -->
+    <link rel="stylesheet" href="/plugins/pace-progress/themes/black/pace-theme-flat-top.css">
+    <!-- flag-icon-css -->
+    <link rel="stylesheet" href="/plugins/flag-icon-css/css/flag-icon.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/dist/css/adminlte.min.css">
     @yield('csscontents')

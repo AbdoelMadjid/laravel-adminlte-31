@@ -18,11 +18,11 @@
 <div class="login-box">
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="/index2.html" class="h1"><b>Admin</b>LTE</a>
+      <a href="/dashboard/dashboardv2" class="h1"><b>Admin</b>LTE</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">You forgot your password? Here you can easily retrieve a new password.</p>
-      <form action="recover-password.html" method="post">
+      <form action="recover-password" method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
@@ -39,7 +39,7 @@
         </div>
       </form>
       <p class="mt-3 mb-1">
-        <a href="login.html">Login</a>
+        <a href="/extras/login-v2">Login</a>
       </p>
     </div>
     <!-- /.login-card-body -->

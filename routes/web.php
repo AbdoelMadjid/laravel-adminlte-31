@@ -420,3 +420,271 @@ Route::prefix('/search')->group(function () {
     );
     });
 });
+
+//exstras
+Route::prefix('/extras')->group(function () {
+    Route::get('/login', function () {
+        return view('pages.extras.login',
+            [
+                "setting_content"=>"",
+                "setting_navbar"=>"navbar-white navbar-light",
+                "title_content"=>"Login",
+            ]
+        );
+    });
+    Route::get('/register', function () {
+        return view('pages.extras.register',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Register",
+        ]
+    );
+    });
+    Route::get('/forgot-password', function () {
+        return view('pages.extras.forgot-password',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Forgot Password",
+        ]
+    );
+    });
+    Route::get('/recover-password', function () {
+        return view('pages.extras.recover-password',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Recover Password",
+        ]
+    );
+    });
+
+    Route::get('/login-v2', function () {
+        return view('pages.extras.login-v2',
+            [
+                "setting_content"=>"",
+                "setting_navbar"=>"navbar-white navbar-light",
+                "title_content"=>"Login",
+            ]
+        );
+    });
+    Route::get('/register-v2', function () {
+        return view('pages.extras.register-v2',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Register",
+        ]
+    );
+    });
+    Route::get('/forgot-password-v2', function () {
+        return view('pages.extras.forgot-password-v2',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Forgot Password",
+        ]
+    );
+    });
+    Route::get('/recover-password-v2', function () {
+        return view('pages.extras.recover-password-v2',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Recover Password",
+        ]
+    );
+    });
+
+    Route::get('/lockscreen', function () {
+        return view('pages.extras.lockscreen',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Loockscreen",
+        ]
+    );
+    });
+    Route::get('/404', function () {
+        return view('pages.extras.404',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Error 404",
+        ]
+    );
+    });
+    Route::get('/500', function () {
+        return view('pages.extras.500',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Error 500",
+        ]
+    );
+    });
+    Route::get('/pace', function () {
+        return view('pages.extras.pace',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Pace",
+        ]
+    );
+    });
+    Route::get('/blank', function () {
+        return view('pages.extras.blank',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Blank",
+        ]
+    );
+    });
+    Route::get('/starter', function () {
+        return view('pages.extras.starter',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Blank",
+        ]
+    );
+    });
+    Route::get('/legacy-user-menu', function () {
+        return view('pages.extras.legacy-user-menu',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Legacy User Menu",
+        ]
+    );
+    });
+    Route::get('/language-menu', function () {
+        return view('pages.extras.language-menu',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Language Menu",
+        ]
+    );
+    });
+});
+
+//mailbox
+Route::prefix('/mailboxs')->group(function () {
+    Route::get('/inbox', function () {
+        return view('pages.mailboxs.inbox',
+            [
+                "setting_content"=>"",
+                "setting_navbar"=>"navbar-white navbar-light",
+                "title_content"=>"Mailbox",
+            ]
+        );
+    });
+    Route::get('/compose', function () {
+        return view('pages.mailboxs.compose',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Mailbox Compose",
+        ]
+    );
+    });
+    Route::get('/read-mail', function () {
+        return view('pages.mailboxs.read-mail',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Read Mail",
+        ]
+    );
+    });
+});
+
+//mailbox
+Route::prefix('/layout')->group(function () {
+    Route::get('/top-nav', function () {
+        return view('pages.layout.top-nav',
+            [
+                "setting_content"=>"",
+                "setting_navbar"=>"navbar-white navbar-light",
+                "title_content"=>"Mailbox",
+            ]
+        );
+    });
+    Route::get('/top-nav-sidebar', function () {
+        return view('pages.layout.top-nav-sidebar',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Mailbox Compose",
+        ]
+    );
+    });
+    Route::get('/boxed', function () {
+        return view('pages.layout.boxed',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Read Mail",
+        ]
+    );
+    });
+    Route::get('/fixed-sidebar', function () {
+        return view('pages.layout.fixed-sidebar',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Read Mail",
+        ]
+    );
+    });
+    Route::get('/fixed-sidebar-custom', function () {
+        return view('pages.layout.fixed-sidebar-custom',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Read Mail",
+        ]
+    );
+    });
+    Route::get('/fixed-topnav', function () {
+        return view('pages.layout.fixed-topnav',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Read Mail",
+        ]
+    );
+    });
+    Route::get('/fixed-footer', function () {
+        return view('pages.layout.fixed-footer',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Read Mail",
+        ]
+    );
+    });
+    Route::get('/collapsed-sidebar', function () {
+        return view('pages.layout.collapsed-sidebar',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Read Mail",
+        ]
+    );
+    });
+});
+
+//iframe
+Route::get('/iframe', function () {
+    return view('pages.iframe',
+        [
+            "setting_content"=>"",
+            "setting_navbar"=>"navbar-white navbar-light",
+            "title_content"=>"Dashboard",
+        ]
+    );
+});

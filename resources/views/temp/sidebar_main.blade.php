@@ -327,8 +327,8 @@
             </a>
           </li>
 <!-- MAIL -->
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-item @yield('MOMailbox')">
+            <a href="#" class="nav-link @yield('MMailbox')">
               <i class="nav-icon far fa-envelope"></i>
               <p>
                 Mailbox
@@ -337,19 +337,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/mailbox/mailbox" class="nav-link">
+                <a href="/mailboxs/inbox" class="nav-link @yield('SMailbox')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inbox</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/mailbox/compose" class="nav-link">
+                <a href="/mailboxs/compose" class="nav-link @yield('SMailboxCompos')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Compose</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/mailbox/read-mail" class="nav-link">
+                <a href="/mailboxs/read-mail" class="nav-link @yield('SMailboxreadmail')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Read</p>
                 </a>
@@ -441,8 +441,8 @@
             </ul>
           </li>
 <!-- EXTRAS -->
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-item @yield('MOExtras')">
+            <a href="#" class="nav-link @yield('MExtras')">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
                 Extras
@@ -527,43 +527,43 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/extras/legacy-user-menu" class="nav-link">
+                <a href="/extras/legacy-user-menu" class="nav-link @yield('SExtraLegacy')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Legacy User Menu</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/extras/language-menu" class="nav-link">
+                <a href="/extras/language-menu" class="nav-link @yield('SExtralanguage')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Language Menu</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/extras/404" class="nav-link">
+                <a href="/extras/404" class="nav-link @yield('SExtra404')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Error 404</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/extras/500" class="nav-link">
+                <a href="/extras/500" class="nav-link @yield('SExtra500')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Error 500</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/extras/pace" class="nav-link">
+                <a href="/extras/pace" class="nav-link @yield('SExtraPace')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pace</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/extras/blank" class="nav-link">
+                <a href="/extras/blank" class="nav-link @yield('SExtraBlank')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Blank Page</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="starter" class="nav-link">
+                <a href="/extras/starter" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Starter Page</p>
                 </a>
@@ -597,7 +597,7 @@
 <!-- MISCELLANEOUS -->
           <li class="nav-header">MISCELLANEOUS</li>
           <li class="nav-item">
-            <a href="iframe" class="nav-link">
+            <a href="/iframe" class="nav-link">
               <i class="nav-icon fas fa-ellipsis-h"></i>
               <p>Tabbed IFrame Plugin</p>
             </a>
